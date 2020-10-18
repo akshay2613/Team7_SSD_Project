@@ -1,17 +1,29 @@
-<html>
-
 <head>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component"></script>
+    <title>My A-Frame Scene</title>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-room-component/dist/aframe-room-component.min.js"></script>
 </head>
 
 <body>
-    <a-scene background="color:#ffff99">
-        <a-plane position="-1.75 0.15 -1" rotation="-90 0 0" width="0.15" height="100" color="#white"></a-plane>
-        <a-plane position="1.75 0.15 -1" rotation="-90 0 0" width="0.15" height="100" color="#white"></a-plane>
-        <a-plane position="2.75 0.12 -4" rotation="-90 0 0" width="1.5" height="100" color="#505050"></a-plane>
-        <a-plane position="-2.75 0.12 -4" rotation="-90 0 0" width="1.5" height="100" color="#505050"></a-plane>
+    <a-scene>
+        <rw-room position="-5 0 -5" material="src: img.jpg; metalness: 0.5" height="4">
+            <rw-floor material="color:red"></rw-floor>
+            <rw-wall position="10 0 0"></rw-wall>
+            <rw-wall position="10 0 6"></rw-wall>
+            <rw-wall position="0 0 6"></rw-wall>
+            <rw-wall position="0 0 0">
+                <rw-doorhole id="holeA"></rw-doorhole>
+                <rw-doorlink from="#holeA" to="#holeB" position="2.5 0 0" height="2.5" width="1.5"></rw-doorlink>
+            </rw-wall>
+        </rw-room>
+        <rw-room position="-3 0 -6" height="4">
+            <rw-floor material="color:yellow"></rw-floor>
+            <rw-wall position=" 1 0 -1" material="color:#787"></rw-wall>
+            <rw-wall position=" 1 0  1" material="color:#877">
+                <rw-doorhole id="holeB"></rw-doorhole>
+            </rw-wall>
+            <rw-wall position="-1 0  1" material="color:#878"></rw-wall>
+            <rw-wall position="-1 0 -1" material="color:#778"></rw-wall>
+        </rw-room>
     </a-scene>
 </body>
-
-</html>
