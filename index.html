@@ -6,22 +6,25 @@
 </head>
 
 <body>
-    <a-scene background="color:#346e33 ">
+    <a-scene background="color:#346e33 " environment="preset: forest">
+        <a-light type="ambient" color="white"></a-light>
         <a-plane position="5 0.001 -6" material="color:#878787;belding:multiply;" height="14" width="14" rotation="-90 0 0"></a-plane>
         <!--Main Big Room-->
         <rw-room position="-1 0.02 -12" material="src: black-wall.jpg; repeat: 0.15 0.25;side:double;" height="5">
             <rw-floor material="src: wooden-floor.jpg; repeat: 0.5  1;"></rw-floor>
             <rw-ceiling material="color:#2f2f2f"></rw-ceiling>
-            <rw-wall position="12 0 0"></rw-wall>
+            <rw-wall position="12 0 0" material="color:#151414;side:double; ">
+            </rw-wall>
+            <a-image src="believe.png" position="11.99 2.4   6" rotation="0 270 0" width="4" height="2.5"></a-image>
             <rw-wall position="12 0 12"></rw-wall>
-            <rw-wall position="0 0 12" material="color:white;opacity:0.1;metalness:1"></rw-wall>
+            <rw-wall position="0 0 12" material="color:black;opacity:0.3;metalness:1"></rw-wall>
             <rw-wall position="0 0 0">
                 <rw-doorhole id="holeA"></rw-doorhole>
                 <rw-doorlink from="#holeA" to="#holeB" position="1 0 0" height="2.5" width="1.5"></rw-doorlink>
             </rw-wall>
         </rw-room>
         <!--Manager inside small Room-->
-        <rw-room position="-1 0 -12" material="color:white;opacity:0.3;belding:multiply;side:double;metalness:1" height="5">
+        <rw-room position="-1 0 -12" material="color:black;opacity:0.3;belding:multiply;side:double;metalness:1" height="5">
             <rw-wall position="7 0 0"></rw-wall>
             <rw-wall position="7 0 5"></rw-wall>
             <rw-wall position="0 0 5" material="trasparent:true; opacity:0;"></rw-wall>
