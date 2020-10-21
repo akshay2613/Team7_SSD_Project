@@ -17,18 +17,19 @@
             <!--Emergency Exit Wall-->
             <rw-wall position="16 0 0" material="color:#151414;side:double; ">
                 <rw-doorhole id="emergencyExit"></rw-doorhole>
-                <rw-doorlink from="#emergencyExit" to="#holeB" position="1 0 0" height="2.5" width="1.5"></rw-doorlink>
+                <rw-doorlink from="#emergencyExit" to="#holeB" position="1 0 0" height="2" width="1"></rw-doorlink>
             </rw-wall>
             <!--EmergencyExit sign-->
-            <a-image src="emergencyExit.png" position="15.99 2.75  1" rotation="0 270 0" width="1" height="0.5"></a-image>
+            <a-image src="emergencyExit.png" position="15.99 2.5  1" rotation="0 270 0" width="1" height="0.5"></a-image>
             <!--Text: Beleive you can and you are half way there-->
-            <a-image src="believe.png" position="15.99 2.4   6" rotation="0 270 0" width="4" height="2.5"></a-image>
+            <a-image src="believe.png" position="15.99 2.4   8" rotation="0 270 0" width="8" height="2.5"></a-image>
             <rw-wall position="16 0 16" length="5"></rw-wall>
             <rw-sides position="16 0 16"></rw-sides>
             <rw-wall position="0 0 16" material="color:black; opacity:0.5; side:double"></rw-wall>
             <rw-wall position="0 0 0">
+                <!--Backward door-->
                 <rw-doorhole id="holeA"></rw-doorhole>
-                <rw-doorlink from="#holeA" to="#holeB" position="1 0 0" height="2.5" width="1.5"></rw-doorlink>
+                <rw-doorlink from="#holeA" to="#holeB" position="1 0 0" height="2" width="1"></rw-doorlink>
             </rw-wall>
         </rw-room>
         <!--White strips around glass wall-->
@@ -40,11 +41,11 @@
         <a-box position="-1 2.5 3" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
         <a-box position=" -1 1.5 -4" width="16" rotation="90 90 0" height="0.05" depth="0.1" material="color:white"></a-box>
         <!--Manager's small glass Room-->
-        <rw-room position="-1 0 -12" material="color:black;opacity:0.3;belding:multiply;side:double;metalness:1" height="5" length="2">
+        <rw-room position="-1 0 -12" material="color:black;opacity:0.3;belding:multiply;side:double;metalness:1;trasparent:true;" height="5">
             <rw-wall position="7 0 0"></rw-wall>
             <rw-wall position="7 0 7.5"></rw-wall>
-            <rw-wall position="0 0 7.5" material="trasparent:true; opacity:0;"></rw-wall>
-            <rw-wall position="0 0 0" material="trasparent:true; opacity:0;">
+            <rw-wall position="0 0 7.5" material=" opacity:0;"></rw-wall>
+            <rw-wall position="0 0 0" material=" opacity:0;">
                 <rw-doorhole id="holeA"></rw-doorhole>
                 <rw-doorlink from="#holeA" to="#holeB" position="1 0 0" height="2.5" width="1.5"></rw-doorlink>
             </rw-wall>
@@ -177,14 +178,18 @@
         </rw-room>
 
 
-
-
-
-
-
-
-
-
+        <!--AC Bottom Center -->
+        <a-image src="AC1.png" position="7.25 4.9 1" rotation="90 0 0" width="1.5" height="1.5"></a-image>
+        <!--AC Center Right1 -->
+        <a-image src="AC1.png" position="10 4.9 -1.5" rotation="90 0 0" width="1.5" height="1.5"></a-image>
+        <!--AC Center Right2 -->
+        <a-image src="AC1.png" position="10 4.9 -5.5" rotation="90 0 0" width="1.5" height="1.5"></a-image>
+        <!--AC Center Left1 -->
+        <a-image src="AC1.png" position="4 4.9 -1.5" rotation="90 0 0" width="1.5" height="1.5"></a-image>
+        <!--AC Center Left2 -->
+        <a-image src="AC1.png" position="4 4.9 -5.5" rotation="90 0 0" width="1.5" height="1.5"></a-image>
+        <!--AC Top Center -->
+        <a-image src="AC1.png" position="7.25 4.9 -9" rotation="90 0 0" width="1.5" height="1.5"></a-image>
 
 
 
