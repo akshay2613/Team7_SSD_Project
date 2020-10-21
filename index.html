@@ -9,9 +9,11 @@
     <a-scene background="color:#346e33 " environment="preset: forest; ground:flat">
         <a-light type="ambient" color="white"></a-light>
         <!--Base of room-->
-        <a-plane position="7 0.001 -4" material="color:#878787;belding:multiply;" height="18" width="18" rotation="-90 0 0"></a-plane>
+        <a-plane position="7 0.001 -4" material="color:#878787;belding:multiply;" height="18" width="18"
+            rotation="-90 0 0"></a-plane>
         <!--Main Big Room-->
-        <rw-room position="-1 0.02 -12" material="src: black-wall.jpg; repeat: 0.15 0.25;belding:multiply;side:double" height="5">
+        <rw-room position="-1 0.02 -12" material="src: black-wall.jpg; repeat: 0.15 0.25;belding:multiply;side:double"
+            height="5">
             <rw-floor material="src: wooden-floor.jpg; repeat: 0.5  1;"></rw-floor>
             <rw-ceiling material="color:#2f2f2f"></rw-ceiling>
             <!--Emergency Exit Wall-->
@@ -20,7 +22,8 @@
                 <rw-doorlink from="#emergencyExit" to="#holeB" position="1 0 0" height="2" width="1"></rw-doorlink>
             </rw-wall>
             <!--EmergencyExit sign-->
-            <a-image src="emergencyExit.png" position="15.99 2.5  1" rotation="0 270 0" width="1" height="0.5"></a-image>
+            <a-image src="emergencyExit.png" position="15.99 2.5  1" rotation="0 270 0" width="1" height="0.5">
+            </a-image>
             <!--Text: Beleive you can and you are half way there-->
             <a-image src="believe.png" position="15.99 2.4   8" rotation="0 270 0" width="8" height="2.5"></a-image>
             <rw-wall position="16 0 16" length="5"></rw-wall>
@@ -33,15 +36,23 @@
             </rw-wall>
         </rw-room>
         <!--White strips around glass wall-->
-        <a-box position="-1 2.5 -9.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
-        <a-box position="-1 2.5 -7" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
-        <a-box position="-1 2.5 -4.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
-        <a-box position="-1 2.5 -2" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
-        <a-box position="-1 2.5 0.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
-        <a-box position="-1 2.5 3" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
-        <a-box position=" -1 1.5 -4" width="16" rotation="90 90 0" height="0.05" depth="0.1" material="color:white"></a-box>
+        <a-box position="-1 2.5 -9.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white">
+        </a-box>
+        <a-box position="-1 2.5 -7" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white">
+        </a-box>
+        <a-box position="-1 2.5 -4.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white">
+        </a-box>
+        <a-box position="-1 2.5 -2" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white">
+        </a-box>
+        <a-box position="-1 2.5 0.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white">
+        </a-box>
+        <a-box position="-1 2.5 3" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white">
+        </a-box>
+        <a-box position=" -1 1.5 -4" width="16" rotation="90 90 0" height="0.05" depth="0.1" material="color:white">
+        </a-box>
         <!--Manager's small glass Room-->
-        <rw-room position="-1 0 -12" material="color:black;opacity:0.3;belding:multiply;side:double;metalness:1;trasparent:true;" height="5">
+        <rw-room position="-1 0 -12"
+            material="color:black;opacity:0.3;belding:multiply;side:double;metalness:1;trasparent:true;" height="5">
             <rw-wall position="7 0 0"></rw-wall>
             <rw-wall position="7 0 7.5"></rw-wall>
             <rw-wall position="0 0 7.5" material=" opacity:0;"></rw-wall>
@@ -51,7 +62,8 @@
             </rw-wall>
         </rw-room>
         <!--White Vertical line at he front of Manager room-->
-        <a-box position="6 2.5 -4.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
+        <a-box position="6 2.5 -4.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white">
+        </a-box>
         <!--White Vertical line at top of Manager room-->
         <a-box position="2.5 5 -4.5" width="7.05" height="0.05" depth="0.1" material="color:white"></a-box>
         <!--White Horizontal line at top of Manager room-->
@@ -59,43 +71,55 @@
         <!--Jhoomer Front Left-->
         <a-box position="2 5 1" width="2" height="0.1" depth="2" material="color:black"></a-box>
         <a-box position="2 4.9 1" width="1.8" height="0.01" depth="1.8" material="color:white"></a-box>
-        <a-box position="2 4.85 1" rotation="0 45 0" width="1.6" height="0.1" depth="1.6" material="color:black"></a-box>
-        <a-box position="2 4.8 1" rotation="0 45 0" width="1.4" height="0.01" depth="1.4" material="color:white"></a-box>
+        <a-box position="2 4.85 1" rotation="0 45 0" width="1.6" height="0.1" depth="1.6" material="color:black">
+        </a-box>
+        <a-box position="2 4.8 1" rotation="0 45 0" width="1.4" height="0.01" depth="1.4" material="color:white">
+        </a-box>
         <a-box position="2 4.7 1" width="1.2" height="0.1" depth="1.2" material="color:black"></a-box>
         <a-box position="2 4.65 1" width="1" height="0.01" depth="1" material="color:white"></a-box>
         <!--Jhoomer Front Right-->
         <a-box position="12 5 1" width="2" height="0.1" depth="2" material="color:black"></a-box>
         <a-box position="12 4.9 1" width="1.8" height="0.01" depth="1.8" material="color:white"></a-box>
-        <a-box position="12 4.85 1" rotation="0 45 0" width="1.6" height="0.1" depth="1.6" material="color:black"></a-box>
-        <a-box position="12 4.8 1" rotation="0 45 0" width="1.4" height="0.01" depth="1.4" material="color:white"></a-box>
+        <a-box position="12 4.85 1" rotation="0 45 0" width="1.6" height="0.1" depth="1.6" material="color:black">
+        </a-box>
+        <a-box position="12 4.8 1" rotation="0 45 0" width="1.4" height="0.01" depth="1.4" material="color:white">
+        </a-box>
         <a-box position="12 4.7 1" width="1.2" height="0.1" depth="1.2" material="color:black"></a-box>
         <a-box position="12 4.65 1" width="1" height="0.01" depth="1" material="color:white"></a-box>
         <!--Jhoomer Back Left-->
         <a-box position="2 5 -9" width="2" height="0.1" depth="2" material="color:black"></a-box>
         <a-box position="2 4.9 -9" width="1.8" height="0.01" depth="1.8" material="color:white"></a-box>
-        <a-box position="2 4.85 -9" rotation="0 45 0" width="1.6" height="0.1" depth="1.6" material="color:black"></a-box>
-        <a-box position="2 4.8 -9" rotation="0 45 0" width="1.4" height="0.01" depth="1.4" material="color:white"></a-box>
+        <a-box position="2 4.85 -9" rotation="0 45 0" width="1.6" height="0.1" depth="1.6" material="color:black">
+        </a-box>
+        <a-box position="2 4.8 -9" rotation="0 45 0" width="1.4" height="0.01" depth="1.4" material="color:white">
+        </a-box>
         <a-box position="2 4.7 -9" width="1.2" height="0.1" depth="1.2" material="color:black"></a-box>
         <a-box position="2 4.65 -9" width="1" height="0.01" depth="1" material="color:white"></a-box>
         <!--Jhoomer Back Right-->
         <a-box position="12 5 -9" width="2" height="0.1" depth="2" material="color:black"></a-box>
         <a-box position="12 4.9 -9" width="1.8" height="0.01" depth="1.8" material="color:white"></a-box>
-        <a-box position="12 4.85 -9" rotation="0 45 0" width="1.6" height="0.1" depth="1.6" material="color:black"></a-box>
-        <a-box position="12 4.8 -9" rotation="0 45 0" width="1.4" height="0.01" depth="1.4" material="color:white"></a-box>
+        <a-box position="12 4.85 -9" rotation="0 45 0" width="1.6" height="0.1" depth="1.6" material="color:black">
+        </a-box>
+        <a-box position="12 4.8 -9" rotation="0 45 0" width="1.4" height="0.01" depth="1.4" material="color:white">
+        </a-box>
         <a-box position="12 4.7 -9" width="1.2" height="0.1" depth="1.2" material="color:black"></a-box>
         <a-box position="12 4.65 -9" width="1" height="0.01" depth="1" material="color:white"></a-box>
         <!--Jhoomer Front Right-->
         <a-box position="7 5 -3" width="2" height="0.1" depth="2" material="color:black"></a-box>
         <a-box position="7 4.9 -3" width="1.8" height="0.01" depth="1.8" material="color:white"></a-box>
-        <a-box position="7 4.85 -3" rotation="0 45 0" width="1.6" height="0.1" depth="1.6" material="color:black"></a-box>
-        <a-box position="7 4.8 -3" rotation="0 45 0" width="1.4" height="0.01" depth="1.4" material="color:white"></a-box>
+        <a-box position="7 4.85 -3" rotation="0 45 0" width="1.6" height="0.1" depth="1.6" material="color:black">
+        </a-box>
+        <a-box position="7 4.8 -3" rotation="0 45 0" width="1.4" height="0.01" depth="1.4" material="color:white">
+        </a-box>
         <a-box position="7 4.7 -3" width="1.2" height="0.1" depth="1.2" material="color:black"></a-box>
         <a-box position="7 4.65 -3" width="1" height="0.01" depth="1" material="color:white"></a-box>
 
         <!--Ceiling border base front-->
-        <a-box position="7 4.8 3.75" width="0.5" height="0.2" depth="16" rotation="0 90 0" material="color:#141414"></a-box>
+        <a-box position="7 4.8 3.75" width="0.5" height="0.2" depth="16" rotation="0 90 0" material="color:#141414">
+        </a-box>
         <!--Ceiling border base behind-->
-        <a-box position="7 4.8 -11.75" width="0.5" height="0.2" depth="16" rotation="0 90 0" material="color:#141414"></a-box>
+        <a-box position="7 4.8 -11.75" width="0.5" height="0.2" depth="16" rotation="0 90 0" material="color:#141414">
+        </a-box>
         <!--Ceiling border base right-->
         <a-box position="14.75 4.8 -4" width="0.5" height="0.2" depth="16" material="color:#141414"></a-box>
         <!--Ceiling border base left-->
@@ -190,6 +214,22 @@
         <a-image src="AC1.png" position="4 4.9 -5.5" rotation="90 0 0" width="1.5" height="1.5"></a-image>
         <!--AC Top Center -->
         <a-image src="AC1.png" position="7.25 4.9 -9" rotation="90 0 0" width="1.5" height="1.5"></a-image>
+
+        <a-assets>
+            <a-asset-item id="tree-obj" src="amu.obj"></a-asset-item>
+            <a-asset-item id="tree-mtl" src="amu.mtl"></a-asset-item>
+        </a-assets>
+
+        <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" position="0 0 -12" scale="1 1 1 " rotation="0 90 0"
+            material="color:black"></a-entity>
+
+        <a-assets>
+            <a-asset-item id="tree-obj" src="amu.obj"></a-asset-item>
+            <a-asset-item id="tree-mtl" src="amu.mtl"></a-asset-item>
+        </a-assets>
+
+        <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" position="15 0 -11" scale="1 1 1 " rotation="0 0 0"
+            material="color:black"></a-entity>
 
 
 
