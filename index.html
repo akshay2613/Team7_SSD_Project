@@ -31,7 +31,7 @@
                 <rw-doorlink from="#holeA" to="#holeB" position="1 0 0" height="2.5" width="1.5"></rw-doorlink>
             </rw-wall>
         </rw-room>
-
+        <!--White strips around glass wall-->
         <a-box position="-1 2.5 -9.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
         <a-box position="-1 2.5 -7" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
         <a-box position="-1 2.5 -4.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white"></a-box>
@@ -91,18 +91,81 @@
         <a-box position="7 4.7 -3" width="1.2" height="0.1" depth="1.2" material="color:black"></a-box>
         <a-box position="7 4.65 -3" width="1" height="0.01" depth="1" material="color:white"></a-box>
 
-        <!--Ceiling border front-->
+        <!--Ceiling border base front-->
         <a-box position="7 4.8 3.75" width="0.5" height="0.2" depth="16" rotation="0 90 0" material="color:#141414"></a-box>
-        <!--Ceiling border behind-->
+        <!--Ceiling border base behind-->
         <a-box position="7 4.8 -11.75" width="0.5" height="0.2" depth="16" rotation="0 90 0" material="color:#141414"></a-box>
-        <!--Ceiling border right-->
+        <!--Ceiling border base right-->
         <a-box position="14.75 4.8 -4" width="0.5" height="0.2" depth="16" material="color:#141414"></a-box>
-        <!--Ceiling border left-->
+        <!--Ceiling border base left-->
         <a-box position="-0.75 4.8 -4" width="0.5" height="0.2" depth="16" material="color:#141414"></a-box>
 
+        <!--Ceiling circle lights on left side-->
+        <a-cylinder position="-0.75 4.7 -9" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="-0.75 4.69 -9" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="-0.75 4.7 -6" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="-0.75 4.69 -6" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="-0.75 4.7 -3" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="-0.75 4.69 -3" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="-0.75 4.7 0" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="-0.75 4.69 0" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="-0.75 4.7 3" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="-0.75 4.69 3" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <!--Ceiling circle lights on right side-->
+        <a-cylinder position="14.75 4.7 -9" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="14.75 4.69 -9" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="14.75 4.7 -6" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="14.75 4.69 -6" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="14.75 4.7 -3" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="14.75 4.69 -3" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="14.75 4.7 0" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="14.75 4.69 0" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="14.75 4.7 3" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="14.75 4.69 3" radius="0.15" height="0.01" material="color:white"></a-cylinder>
 
 
+        <!--Ceiling circle lights on bottom side-->
+        <a-cylinder position="1 4.7 3.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="1 4.69 3.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
 
+        <a-cylinder position="4 4.7 3.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="4 4.69 3.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="7 4.7 3.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="7 4.69 3.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="10 4.7 3.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="10 4.69 3.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="13 4.7 3.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="13 4.69 3.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <!--Ceiling circle lights on upper side-->
+        <a-cylinder position="1 4.7 -11.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="1 4.69 -11.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="4 4.7 -11.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="4 4.69 -11.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="7 4.7 -11.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="7 4.69 -11.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="10 4.7 -11.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="10 4.69 -11.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <a-cylinder position="13 4.7 -11.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
+        <a-cylinder position="13 4.69 -11.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
+
+        <!--Temporary room of no use-->
         <rw-room position="0 0 -115" height="6" material="side:double;">
             <rw-floor material="color:yellow"></rw-floor>
             <rw-wall position=" 1 0 -1" material="color:#787"></rw-wall>
