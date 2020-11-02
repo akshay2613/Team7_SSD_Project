@@ -34,6 +34,7 @@
             <rw-wall position="0 0 16" material="color:black; opacity:0.5; side:double"></rw-wall>
             <rw-wall position="0 0 0">
                 <!--Backward door-->
+
                 <rw-doorhole id="holeA"></rw-doorhole>
                 <rw-doorlink from="#holeA" to="#holeB" position="1 0 0" height="2" width="1"></rw-doorlink>
             </rw-wall>
@@ -329,6 +330,7 @@
         <a-entity obj-model="obj: #chair-obj; mtl: #chair-mtl" position="-3 0 -7" scale="1.5 1.5 1.5" rotation="0 0 0" >
         </a-entity>
 
+
         <!-- table - chair - set in hall -->
         <a-assets>
             <a-asset-item id="tac-obj" src="assts/table-and-chairs.obj"></a-asset-item>
@@ -338,16 +340,6 @@
 
         <a-entity obj-model="obj: #tac-obj; mtl: #tac-mtl" position="12 0 -8" 
         scale="1.2 1 1.2" rotation="0 0 0" >
-        </a-entity>
-
-        <a-assets>
-            <a-asset-item id="tac-obj2" src="assts/table-and-chairs.obj"></a-asset-item>
-            <a-asset-item id="tac-mtl2" src="assts/table-and-chairs.mtl"></a-asset-item>
-        </a-assets>        
-
-
-        <a-entity obj-model="obj: #tac-obj2; mtl: #tac-mtl2" position="11 0 -8" 
-        scale="1.2 1.2 1.2" rotation="0 0 0" >
         </a-entity>
 
         <!-- fir extinguisher -->
@@ -364,6 +356,17 @@
         animation.dur: 3000; animation.loop: 1">
         </a-entity>
 
+        <!-- office for display -->
+        <a-assets>
+            <a-asset-item id="office-obj" src="office.obj"></a-asset-item>
+            <a-asset-item id="office-mtl" src="office.mtl"></a-asset-item>
+        </a-assets>  
+
+        <a-entity obj-model="obj: #office-obj; mtl: #office-mtl" position="12 0 0.25" 
+        scale="1.4 1.6 1.4" rotation="0 270 0" >
+        </a-entity>        
+
+        
 
     </a-scene>
 </body>
