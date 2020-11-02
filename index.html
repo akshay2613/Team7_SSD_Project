@@ -330,7 +330,40 @@
         <a-entity obj-model="obj: #chair-obj; mtl: #chair-mtl" position="-3 0 -7" scale="1.5 1.5 1.5" rotation="0 0 0" >
         </a-entity>
 
-        
+
+        <!-- table - chair - set in hall -->
+        <a-assets>
+            <a-asset-item id="tac-obj" src="assts/table-and-chairs.obj"></a-asset-item>
+            <a-asset-item id="tac-mtl" src="assts/table-and-chairs.mtl"></a-asset-item>
+        </a-assets>        
+
+
+        <a-entity obj-model="obj: #tac-obj; mtl: #tac-mtl" position="11 0 -2" 
+        scale="1.2 1 1.2" rotation="0 0 0" >
+        </a-entity>
+
+        <a-assets>
+            <a-asset-item id="tac-obj2" src="assts/table-and-chairs.obj"></a-asset-item>
+            <a-asset-item id="tac-mtl2" src="assts/table-and-chairs.mtl"></a-asset-item>
+        </a-assets>        
+
+
+        <a-entity obj-model="obj: #tac-obj2; mtl: #tac-mtl2" position="11 0 -8" 
+        scale="1.2 1.2 1.2" rotation="0 0 0" >
+        </a-entity>
+
+        <!-- fire extinguisher -->
+        <a-assets>
+            <a-asset-item id="fire-obj" src="assts/fire/fire-extinguisher.obj"></a-asset-item>
+            <a-asset-item id="fire-mtl" src="assts/fire/fire-extinguisher.mtl"></a-asset-item>
+        </a-assets>        
+
+
+        <a-entity obj-model="obj: #fire-obj; mtl: #fire-mtl" position="14 1 -11.7" 
+        scale="0.01 0.01 0.01" rotation="0 90 0">
+        </a-entity>
+
+
 
     </a-scene>
 </body>
