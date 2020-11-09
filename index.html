@@ -26,7 +26,7 @@
             <a-image src="emergencyExit.png" position="15.99 2.5  1" rotation="0 270 0" width="1" height="0.5">
             </a-image>
             <!--Text: Beleive you can and you are half way there-->
-            <a-image src="believe.png" position="15.99 2.4   8" rotation="0 270 0" width="8" height="2.5"></a-image>
+            <a-image src="believe.png" position="15.99 2.4 9" rotation="0 270 0" width="10" height="3"></a-image>
             <rw-wall position="16 0 16" length="5"></rw-wall>
             <rw-sides position="16 0 16"></rw-sides>
             <rw-wall position="0 0 16" material="color:black; opacity:0.5; side:double"></rw-wall>
@@ -61,13 +61,13 @@
                 <rw-doorlink from="#holeA" to="#holeB" position="1 0 0" height="2.5" width="1.5"></rw-doorlink>
             </rw-wall>
         </rw-room>
-        <!--White Vertical line at he front of Manager room-->
+        <!--White Vertical line at the front of Manager room-->
         <a-box position="6 2.5 -4.5" width="5" rotation="0 0 270" height="0.05" depth="0.1" material="color:white">
         </a-box>
         <!--White Vertical line at top of Manager room-->
         <a-box position="2.5 5 -4.5" width="7.05" height="0.05" depth="0.1" material="color:white"></a-box>
         <!--White Horizontal line at top of Manager room-->
-        <a-box position="6 5 -8.5" width="0.1" height="0.05" depth="8.05" material="color:white"></a-box>
+        <a-box position="6 5 -8.25" width="0.1" height="0.05" depth="7.5" material="color:white"></a-box>
         <!--Jhoomer Front Left-->
         <a-box position="2 5 1" width="2" height="0.1" depth="2" material="color:black"></a-box>
         <a-box position="2 4.9 1" width="1.8" height="0.01" depth="1.8" material="color:white"></a-box>
@@ -190,15 +190,18 @@
         <a-cylinder position="13 4.7 -11.75" radius="0.2" height="0.01" material="color:black"></a-cylinder>
         <a-cylinder position="13 4.69 -11.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
 
-        <!--Temporary room of no use-->
-        <rw-room position="0 0 -115" height="6" material="side:double;">
-            <rw-floor material="color:yellow"></rw-floor>
-            <rw-wall position=" 1 0 -1" material="color:#787"></rw-wall>
-            <rw-wall position=" 1 0  1" material="color:#877">
+        <!--Base of room-->
+        <a-plane position="0.5 0.001 -13" material="color:#878787;belding:multiply;" height="6" width="5" rotation="-90 0 0"></a-plane>
+        <!--Server room before manager cabin-->
+        <rw-room position="1 0.02 -13" height="5" material="src: black-wall.jpg; repeat: 0.15 0.25;belding:multiply;side:double">
+            <rw-floor material="src: wooden-floor.jpg; repeat: 0.5  1;"></rw-floor>
+            <rw-ceiling material="color:#2f2f2f"></rw-ceiling>
+            <rw-wall position=" 1 0 -2"></rw-wall>
+            <rw-wall position=" 1 0  1" material="transparent:true;side:double;belding:multiply;opacity:0;">
                 <rw-doorhole id="holeB"></rw-doorhole>
             </rw-wall>
-            <rw-wall position="-1 0  1" material="color:#878"></rw-wall>
-            <rw-wall position="-1 0 -1" material="color:#778"></rw-wall>
+            <rw-wall position="-2 0  1"></rw-wall>
+            <rw-wall position="-2 0 -2"></rw-wall>
         </rw-room>
 
 
