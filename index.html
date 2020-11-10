@@ -12,7 +12,12 @@
     <a-scene background="color:#346e33 " environment="preset: forest; ground:flat" cursor="rayOrigin: mouse">
         <a-light type="ambient" color="white"></a-light>
         <!--Base of room-->
-        <a-plane position="7 0.001 -4" material="color:#878787;belding:multiply;" height="18" width="18" rotation="-90 0 0"></a-plane>
+        <a-assets>
+            <img id="sidewalk" src="sidewalk1.jpg">
+        </a-assets>
+        <!--Base of room-->
+        <a-plane position="7 0.001 -4" material="src:sidewalk1.jpg;repeat: 15  15;" normal-map="#sidewalk" normal-texture-repeat="15 15" normal-scale="15 15" height="18" width="18" rotation="-90 0 0"></a-plane>
+
         <!--Main Big Room-->
         <rw-room position="-1 0.02 -12" material="src: black-wall.jpg; repeat: 0.15 0.25;belding:multiply;side:double" height="5">
             <rw-floor material="src: wooden-floor.jpg; repeat: 0.5  1;"></rw-floor>
@@ -52,7 +57,7 @@
         <a-box position=" -1 1.5 -4" width="16" rotation="90 90 0" height="0.05" depth="0.1" material="color:white">
         </a-box>
         <!--Manager's small glass Room-->
-        <rw-room position="-1 0 -12" material="color:black;opacity:0.3;belding:multiply;side:double;metalness:1;trasparent:true;" height="5">
+        <rw-room position="-1 0 -12" material="color:black;opacity:0.3;side:double;metalness:1;trasparent:true;" height="5">
             <rw-wall position="7 0 0"></rw-wall>
             <rw-wall position="7 0 7.5"></rw-wall>
             <rw-wall position="0 0 7.5" material=" opacity:0;"></rw-wall>
@@ -191,7 +196,7 @@
         <a-cylinder position="13 4.69 -11.75" radius="0.15" height="0.01" material="color:white"></a-cylinder>
 
         <!--Base of room-->
-        <a-plane position="0.5 0.001 -13" material="color:#878787;belding:multiply;" height="6" width="5" rotation="-90 0 0"></a-plane>
+        <a-plane position="0.5 0.001 -14.5" material="src:sidewalk1.jpg;repeat: 4.75  3;" normal-map="#sidewalk" normal-texture-repeat="4.75 3" normal-scale="4.75 3" height="3" width="5" rotation="-90 0 0"></a-plane>
         <!--Server room before manager cabin-->
         <rw-room position="1 0.02 -13" height="5" material="src: black-wall.jpg; repeat: 0.15 0.25;belding:multiply;side:double">
             <rw-floor material="src: wooden-floor.jpg; repeat: 0.5  1;"></rw-floor>
