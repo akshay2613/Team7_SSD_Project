@@ -1,0 +1,13 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl Physical
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.003922 0.023529 0.066667
+Ks 0.007137 0.007137 0.007137
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump fabric_fine.jpg
+map_Kd fabric_fine.jpg
