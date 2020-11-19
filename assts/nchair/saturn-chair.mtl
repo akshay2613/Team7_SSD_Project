@@ -1,0 +1,22 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl base
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.478431 0.478431 0.478431
+Ks 0.098980 0.098980 0.098980
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl seat
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.920000 0.920000 0.920000
+Ks 0.043922 0.043922 0.043922
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump seat_bump.jpg
+map_Kd seat_color(brown).jpg
