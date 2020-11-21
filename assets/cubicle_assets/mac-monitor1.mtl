@@ -45,7 +45,7 @@ Ks 0.034902 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd 350c6c8e-d77e-47fc-9581-c6ca53cc0a7c-noa-2020-06-05T18-49-58.jpg
+map_Kd white.jpg
 
 newmtl display_frame
 Ns 96.078431
