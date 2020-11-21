@@ -437,7 +437,7 @@
         </a-assets>
 
 
-        <a-entity obj-model="obj: #wall-clock-obj; mtl: #wall-clock-mtl" position="4.5 3 3.9" scale="0.1 0.1 0.1" rotation="90 180 0">
+        <a-entity o5bj-model="obj: #wall-clock-obj; mtl: #wall-clock-mtl" position="4.5 3 3.9" scale="0.1 0.1 0.1" rotation="90 180 0">
         </a-entity>
 
         <!-- flower pots -->
@@ -469,7 +469,22 @@
         <a-entity obj-model="obj: #flower-obj3; mtl: #flower-mtl3" position="1.5 0 -11.7" scale="0.02 0.02 0.02" rotation="0 0 0">
         </a-entity>
 
+    <!--TV-->
+    <a-assets>
+    <a-asset-item id="flat-screen-lcd-tv-obj1" src="assets/flat-screen-lcd-tv/flat-screen-lcd-tv.obj">
+    </a-asset-item>
+    <a-asset-item id="flat-screen-lcd-tv-mtl1" src="assets/flat-screen-lcd-tv/flat-screen-lcd-tv.mtl">
+    </a-asset-item>
+    </a-assets>
 
+    <a-entity obj-model="obj: #flat-screen-lcd-tv-obj1; mtl: #flat-screen-lcd-tv-mtl1" position="8.5 1.9 3.95" scale="0.5 0.5 0.5" rotation="0 180 0">
+    </a-entity>
+    <!-- Video -->
+    <a-assets>
+    <video id="we-did-it1" autoplay loop="true" src="assets/video/we_did_it.mp4"></video>
+    </a-assets>
+
+    <a-video src="#we-did-it1" width="2.7" height="1.5" position="8.5 2.9 3.95"></a-video>
 
         <!--new pots outside-->
         <a-entity obj-model="obj: #flower-obj3; mtl: #flower-mtl3" position="15.5 0 -12.7" scale="0.02 0.02 0.02" rotation="0 0 0"></a-entity>
@@ -558,6 +573,23 @@
 
         <a-entity obj-model="obj: #nchair-obj; mtl: #nchair-mtl" position="7.4 0 3 " scale="0.03 0.03 0.03" rotation="0 180 0">
         </a-entity>
+
+        <a-assets>
+            <a-asset-item id="nchair-obj1" src="assts/beanbag/bean-bag.obj"></a-asset-item>
+            <a-asset-item id="nchair-mtl1" src="assts/beanbag/bean-bag.mtl"></a-asset-item>
+        </a-assets>
+
+        <a-entity obj-model="obj: #nchair-obj1; mtl: #nchair-mtl1" position="7.5 0 -9 " scale="1 1.2 1" rotation="0 90 0">
+        </a-entity>        
+        <a-entity obj-model="obj: #nchair-obj1; mtl: #nchair-mtl1" position="7.5 0 -11 " scale="1 1.2 1" rotation="0 90 0">
+        </a-entity> 
+        <a-entity obj-model="obj: #nchair-obj1; mtl: #nchair-mtl1" position="7.5 0 -7 " scale="1 1.2 1" rotation="0 90 0">
+        </a-entity> 
+        <a-entity obj-model="obj: #nchair-obj1; mtl: #nchair-mtl1" position="7.5 0 -5 " scale="1 1.2 1" rotation="0 90 0">
+        </a-entity> 
+
+
+
         <!--***************************Akshay's Code*****************************************-->
         <!--Cubicle-->
         <!--Table-->
